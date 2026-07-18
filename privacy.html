@@ -20,8 +20,9 @@
   Your location, prayer logs, tasbih counts, and settings never leave your device.
   The only personal data that leaves your phone is the name and email you enter at
   signup, which is shared with RevenueCat (our subscription manager) together with
-  your subscription status. We show no ads, use no analytics trackers, and never
-  sell data. Ever.</p>
+  your subscription status, plus anonymous crash reports (no name, email, or
+  location) that help us fix bugs. We show no ads, use no analytics trackers,
+  and never sell data. Ever.</p>
 </div>
 
 <h2>1. Who we are</h2>
@@ -59,6 +60,11 @@ by TechnologiesRehman, based in Ontario, Canada (&ldquo;we&rdquo;,
     <td>Qibla compass</td>
     <td>Processed in real time on your device; never stored or transmitted</td>
   </tr>
+  <tr>
+    <td>Anonymous crash reports (stack trace, device model, OS &amp; app version)</td>
+    <td>Finding and fixing bugs</td>
+    <td>Sentry (see §4) — stripped of name, email, location, and identifiers</td>
+  </tr>
 </table>
 <p>We do not collect analytics, advertising identifiers, contact lists, photos,
 or browsing data. The app contains no advertising SDKs and no third-party
@@ -71,12 +77,18 @@ information. Their handling of your payment data is governed by
 <a href="https://policies.google.com/privacy">Google&rsquo;s Privacy Policy</a> and
 <a href="https://www.apple.com/legal/privacy/">Apple&rsquo;s Privacy Policy</a>.</p>
 
-<h2>4. Our one service provider: RevenueCat</h2>
-<p>We use RevenueCat, Inc. to manage subscriptions across platforms. RevenueCat
+<h2>4. Our service providers</h2>
+<p><strong>RevenueCat, Inc.</strong> manages subscriptions across platforms. RevenueCat
 receives your subscription status, an anonymous app user ID, and the name and
 email you entered at signup. RevenueCat processes this data on our behalf and
 does not sell it. See the
 <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a>.</p>
+<p><strong>Sentry</strong> (Functional Software, Inc.) receives crash and error
+reports so we can find and fix bugs. These reports contain technical details
+about the error (stack trace, device model, OS version, app version). They are
+configured to contain <strong>no</strong> name, email, location, or advertising
+identifiers — we strip user-identifying fields before anything is sent. See the
+<a href="https://sentry.io/privacy/">Sentry Privacy Policy</a>.</p>
 
 <h2>5. Notifications</h2>
 <p>Prayer reminders and adhan notifications are scheduled locally on your
